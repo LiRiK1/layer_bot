@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  aiogram:
+    image: RodionBot:latest
+    build:
+      context: RodionBot
+      dockerfile: Dockerfile
+    volumes:
+      - /RodionBot:/app/data
+    ports:
+      - "8888:8888"
+
